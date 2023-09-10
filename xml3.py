@@ -1,6 +1,8 @@
+#!/usr/bin/env/python3
+
 import xmltodict
 
-with open('./preferences.xml') as fd:
+with open('./preferences.xml', encoding="utf8") as fd:
     dictionary = xmltodict.parse(fd.read())
 
 inhalt = str(dictionary)
